@@ -1,1 +1,0 @@
-isBrowser=!("undefined"==typeof window||"undefined"==typeof navigator||!window.document),mixin({isBrowser});
