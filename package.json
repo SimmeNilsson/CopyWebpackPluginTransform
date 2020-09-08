@@ -1,0 +1,18 @@
+{
+  "name": "CopyPlugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.1.0",
+    "rimraf": "^3.0.2",
+    "terser-webpack-plugin": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "yarn clean",
+    "build": "webpack --config webpack.config.js --env.prod=1"
+  }
+}
